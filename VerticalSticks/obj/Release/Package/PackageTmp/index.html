@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Vertical Sticks App</title>
+</head>
+<body>
+
+    <div>
+        <h2>Stick height lists</h2>
+        <ul id="sticks" />
+    </div>
+    <div>
+        <h2>Enter List ID to view solution</h2>
+        <input type="text" id="stickId" size="5" />
+        <input type="button" value="Solve" onclick="find();" />
+        <p id="stick" />
+    </div>
+    <!--<div>
+        <h2>Enter new list to evaluate (integers separated by spaces)</h2>
+        <input type="text" id="stickStickHeights" size="5" />
+        <input type="button" value="Add" onclick="newItem();" />
+        <p id="stick" />
+    </div>-->
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+
+    <script>
+    // Part 1
+    var uri = 'api/sticks';
+
+    $(document).ready(function () {
+      // Send an AJAX request
+      $.getJSON(uri)
+          .done(function (data) {
+            // On success, 'data' contains a list of sticks.
+            $.each(data, function (key, item) {
+              // Add a list item for the stick.
+              $('<li>', { text: listItems(item) }).appendTo($('#sticks'));
+            });
+          });
+    });
+
+    function listItems(item) {
+        return "List ID: " + item.Id +
+            " _ Stick Heights: " + item.StickHeights.replace(/ /g, ",");
+    }
+    function resultItem(item) {
+        return "Stick Heights: " + item.StickHeights.replace(/ /g, ",") +
+            " _ Average Score: " + item.AverageScore +
+            " _ Permutations: " + item.Permutations;
+    }
+    // Part 2
+    function find() {
+      var id = $('#stickId').val();
+      $.getJSON(uri + '/' + id)
+          .done(function (data) {
+            $('#stick').text(resultItem(data));
+          })
+          .fail(function (jqXHR, textStatus, err) {
+            $('#stick').text('Error: ' + err);
+          });
+    }
+    //function newItem(item) {
+    //    var StickHeights = $('#stickStickHeights').val();
+    //    $.getJSON(uri + '/' + StickHeights)
+    //        .done(function (data) {
+    //            $('#stick').text(resultItem(data));
+    //        })
+    //        .fail(function (jqXHR, textStatus, err) {
+    //            $('#stick').text('Error: ' + err);
+    //        });
+    //}
+    </script>
+</body>
+</html>

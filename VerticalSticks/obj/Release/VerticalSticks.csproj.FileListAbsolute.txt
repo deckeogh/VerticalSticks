@@ -1,0 +1,17 @@
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\VerticalSticks.dll.config
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\VerticalSticks.dll
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\VerticalSticks.pdb
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\Newtonsoft.Json.dll
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\System.Net.Http.Formatting.dll
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\System.Web.Http.dll
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\System.Web.Http.WebHost.dll
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\Newtonsoft.Json.xml
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\System.Net.Http.Formatting.xml
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\System.Web.Http.xml
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\bin\System.Web.Http.WebHost.xml
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\obj\Release\VerticalSticks.csprojResolveAssemblyReference.cache
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\obj\Release\VerticalSticks.csproj.CoreCompileInputs.cache
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\obj\Release\VerticalSticks.dll
+C:\Users\Declan\source\repos\VerticalSticks\VerticalSticks\obj\Release\VerticalSticks.pdb
