@@ -13,7 +13,7 @@ namespace VerticalSticks.Controllers
         Stick[] sticks = new Stick[]
         {
             new Stick { Id = 1,  StickHeights = "1 2 3 4 5" },
-            new Stick { Id = 2,  StickHeights = "3 3 3" },
+            new Stick { Id = 2,  StickHeights = "3 3 3 4 5" },
             new Stick { Id = 3,  StickHeights = "2 2 3" },
             new Stick { Id = 4,  StickHeights = "10 2 4 4" },
             new Stick { Id = 5,  StickHeights = "10 10 10 5 10" },
